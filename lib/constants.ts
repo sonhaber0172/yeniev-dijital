@@ -3,7 +3,7 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 export const WHATSAPP_MESSAGE = encodeURIComponent("Merhaba, ücretsiz reklam analizi hakkında bilgi almak istiyorum.");
 export const WHATSAPP_FULL_URL = `${WHATSAPP_URL}?text=${WHATSAPP_MESSAGE}`;
 
-export const INSTAGRAM_URL = "https://instagram.com/yenievdijital";
+export const INSTAGRAM_URL = "https://instagram.com/yeniev_dijital";
 
 export const STATS = [
   { value: 340, suffix: "%", label: "Ortalama Lead Artışı" },
