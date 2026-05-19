@@ -15,14 +15,14 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={ref} className="min-h-screen flex items-center pt-20 pb-16 px-4 sm:px-6 relative overflow-hidden">
+    <section ref={ref} className="min-h-screen flex items-center pt-28 pb-24 px-6 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 right-10 w-72 h-72 rounded-full opacity-20 blur-3xl" style={{ background: "radial-gradient(circle, #7B5CF0, transparent)" }} />
         <div className="absolute bottom-20 left-10 w-48 h-48 rounded-full opacity-10 blur-3xl" style={{ background: "radial-gradient(circle, #F5C842, transparent)" }} />
         <div className="absolute top-1/2 right-1/4 w-32 h-32 rounded-full opacity-15 blur-2xl" style={{ background: "radial-gradient(circle, #A78BFA, transparent)" }} />
       </div>
 
-      <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-5xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center">
         <div>
           <div className="fade-in inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium text-[#A78BFA] mb-6" style={{ background: "rgba(123,92,240,0.15)", border: "1px solid rgba(123,92,240,0.3)" }}>
             <span className="w-2 h-2 rounded-full bg-[#A78BFA] animate-pulse" />
