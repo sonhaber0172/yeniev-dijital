@@ -9,29 +9,41 @@ export default function FAQ() {
   const ref = useScrollAnimation();
 
   return (
-    <section id="faq" ref={ref} className="py-32 px-6">
-      <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-16 fade-in">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-5">
+    <section id="faq" ref={ref} style={{ backgroundColor: "#13131E", padding: "100px 24px" }}>
+      <div style={{ maxWidth: "720px", margin: "0 auto" }}>
+
+        <div className="fade-in" style={{ textAlign: "center", marginBottom: "64px" }}>
+          <h2 style={{ fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 700, marginBottom: "16px", color: "#F8F8FF" }}>
             Sık Sorulan <span className="gradient-text">Sorular</span>
           </h2>
-          <p className="text-[#9B9BB4] text-base leading-relaxed">
+          <p style={{ color: "#9B9BB4", fontSize: "16px", lineHeight: "1.7" }}>
             Aklınızdaki soruların cevapları burada.
           </p>
         </div>
 
-        <div className="flex flex-col gap-4">
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           {FAQS.map((faq, index) => (
-            <div key={index} className="fade-in glass rounded-2xl overflow-hidden">
+            <div
+              key={index}
+              className="fade-in glass"
+              style={{ borderRadius: "16px", overflow: "hidden" }}
+            >
               <button
-                className="w-full flex items-center justify-between p-7 text-left hover:bg-[#7B5CF0]/10 transition-colors"
+                style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", padding: "24px 28px", textAlign: "left", background: "transparent", border: "none", cursor: "pointer" }}
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <span className="font-medium text-[#F8F8FF] pr-6 text-base">{faq.question}</span>
+                <span style={{ fontWeight: 500, color: "#F8F8FF", fontSize: "15px", paddingRight: "24px", lineHeight: "1.5" }}>{faq.question}</span>
                 <span
-                  className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300"
                   style={{
+                    flexShrink: 0,
+                    width: "28px",
+                    height: "28px",
+                    borderRadius: "50%",
                     background: "linear-gradient(135deg, #7B5CF0, #A78BFA)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    transition: "transform 0.3s ease",
                     transform: openIndex === index ? "rotate(45deg)" : "rotate(0deg)",
                   }}
                 >
@@ -41,15 +53,13 @@ export default function FAQ() {
                 </span>
               </button>
 
-              <div
-                className="overflow-hidden transition-all duration-300"
-                style={{ maxHeight: openIndex === index ? "200px" : "0px" }}
-              >
-                <p className="px-7 pb-7 text-[#9B9BB4] text-sm leading-relaxed">{faq.answer}</p>
+              <div style={{ maxHeight: openIndex === index ? "200px" : "0px", overflow: "hidden", transition: "max-height 0.3s ease" }}>
+                <p style={{ padding: "0 28px 24px", color: "#9B9BB4", fontSize: "14px", lineHeight: "1.7" }}>{faq.answer}</p>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
