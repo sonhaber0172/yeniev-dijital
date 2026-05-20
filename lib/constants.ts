@@ -12,6 +12,39 @@ export const STATS = [
   { value: 15, suffix: "", label: "Günde Ulaşılan Firma" },
 ];
 
+export const NICHES = [
+  {
+    icon: "🛋️",
+    title: "Oturma Grubu",
+    items: ["Koltuk takımı", "Köşe takımı", "Berjer", "TV ünitesi", "Sehpa takımı"],
+  },
+  {
+    icon: "🛏️",
+    title: "Yatak Odası",
+    items: ["Yatak takımı", "Gardırop", "Şifonyer", "Komodin", "Baza"],
+  },
+  {
+    icon: "🍽️",
+    title: "Yemek Odası",
+    items: ["Yemek masası", "Konsol", "Vitrin", "Sandalye seti"],
+  },
+  {
+    icon: "💍",
+    title: "Çeyiz Paketi",
+    items: ["Düğün paketi", "Full ev paketi", "Paket mobilya satışı", "Toplu set satışı"],
+  },
+  {
+    icon: "📐",
+    title: "Modüler Mobilya",
+    items: ["Özel ölçü mobilya", "Minimal mobilya", "Modern dekor ürünleri"],
+  },
+  {
+    icon: "🪞",
+    title: "Ev Dekor Tamamlayıcıları",
+    items: ["Ayna", "Dresuar", "Dekor sehpa", "Halı", "Aksesuar"],
+  },
+];
+
 export const PROBLEMS = [
   {
     icon: "💸",

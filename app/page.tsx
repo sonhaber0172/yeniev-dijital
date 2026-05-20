@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
+import Niches from "@/components/Niches";
 import HowItWorks from "@/components/HowItWorks";
 import Stats from "@/components/Stats";
 import WhyUs from "@/components/WhyUs";
@@ -19,6 +20,8 @@ export default function Home() {
         <Hero />
         <div className="section-divider" />
         <Problem />
+        <div className="section-divider" />
+        <Niches />
         <div className="section-divider" />
         <HowItWorks />
         <div className="section-divider" />

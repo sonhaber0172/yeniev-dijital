@@ -21,7 +21,7 @@ export default function Hero() {
         <div style={{ position: "absolute", bottom: "15%", left: "5%", width: "250px", height: "250px", borderRadius: "50%", background: "radial-gradient(circle, rgba(245,200,66,0.12), transparent)", filter: "blur(40px)" }} />
       </div>
 
-      <div style={{ maxWidth: "1000px", margin: "0 auto", width: "100%", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "center" }}>
+      <div style={{ maxWidth: "1000px", margin: "0 auto", width: "100%", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "60px", alignItems: "center" }}>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
 
