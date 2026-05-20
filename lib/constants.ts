@@ -112,7 +112,7 @@ export const WHY_US = [
 export const FAQS = [
   {
     question: "Reklam bütçesi ne kadar olmalı?",
-    answer: "Hizmetimizde kalite standardı olarak günlük minimum 500₺, aylık minimum 15.000₺ reklam bütçesiyle çalışıyoruz. Bu sınırın altında sürdürülebilir ve ölçülebilir sonuç almanın mümkün olmadığını gördük. Ciddi büyüme hedefleyen firmalarla çalışıyoruz.",
+    answer: "Kurduğumuz reklam sistemi gerçek ve ölçülebilir sonuçlar üretmek için tasarlandı. Bu yüzden günlük minimum 500₺, aylık minimum 15.000₺ reklam bütçesiyle çalışıyoruz. Büyümesini ciddiye alan, yatırımından karşılık bekleyen firmalar için doğru adrestesiniz.",
   },
   {
     question: "Sonuçları ne zaman görürüm?",
