@@ -112,15 +112,11 @@ export const WHY_US = [
 export const FAQS = [
   {
     question: "Reklam bütçesi ne kadar olmalı?",
-    answer: "Başlangıç için aylık 3.000₺ ile 5.000₺ arası bir reklam bütçesi yeterli olur. Ajans ücretimiz bu bütçeye dahil değildir. Ücretsiz analizde size özel bütçe planı sunuyoruz.",
+    answer: "Hizmetimizde kalite standardı olarak günlük minimum 500₺, aylık minimum 15.000₺ reklam bütçesiyle çalışıyoruz. Bu sınırın altında sürdürülebilir ve ölçülebilir sonuç almanın mümkün olmadığını gördük. Ciddi büyüme hedefleyen firmalarla çalışıyoruz.",
   },
   {
     question: "Sonuçları ne zaman görürüm?",
     answer: "İlk mesajlar genellikle kampanya yayına girdikten 48-72 saat içinde gelmeye başlar. Optimizasyon süreciyle birlikte 2-4. haftada stabil sonuçlara ulaşıyoruz.",
-  },
-  {
-    question: "Sözleşme zorunlu mu?",
-    answer: "Aylık çalışıyoruz, uzun dönemli sözleşme zorunlu değil. Sonuçlardan memnun kaldığınız sürece devam ediyoruz.",
   },
   {
     question: "Adana dışı firmalarla çalışıyor musunuz?",
