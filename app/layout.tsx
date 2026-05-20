@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "YeniEv Dijital — Adana Mobilya & Çeyiz Meta Reklam Ajansı",
   description: "Adana'daki mobilya mağazaları ve çeyiz firmalarına özel Meta (Instagram + Facebook) reklam yönetimi. Ayda 120 mesajdan 600'e çıkın.",
   keywords: "adana mobilya reklam, adana çeyiz reklam, meta reklam ajansı, instagram reklam adana, facebook reklam adana",
+  verification: {
+    google: "efH-LelN_3dOidrnJHf2yJQQBHxkSKcWVFfGPnPZVSc",
+  },
   openGraph: {
     title: "YeniEv Dijital — Adana Mobilya & Çeyiz Meta Reklam Ajansı",
     description: "Adana'daki mobilya mağazaları ve çeyiz firmalarına özel Meta reklam yönetimi.",
