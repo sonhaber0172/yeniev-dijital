@@ -4,12 +4,13 @@ export default function Footer() {
   return (
     <footer className="py-10 px-4 sm:px-6 bg-[#0A0A0F] border-t border-[#7B5CF0]/20">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
-        <div className="flex flex-col items-center sm:items-start">
-          <span className="text-xl font-bold gradient-text">Yeniev</span>
-          <span className="text-[10px] text-[#9B9BB4]">Ev mobilyası & çeyiz</span>
-          <span className="text-[10px] font-semibold text-[#A78BFA] tracking-widest uppercase">Reklam</span>
-          <p className="text-xs text-[#9B9BB4] mt-2 text-center sm:text-left">
-            Adana'nın mobilya ve çeyiz nişi Meta reklam ajansı.
+        <div className="flex flex-col items-center sm:items-start gap-2">
+          <div className="flex items-center gap-2">
+            <span className="text-xl font-bold gradient-text">YeniEv</span>
+            <span style={{ fontSize: "11px", color: "#9B9BB4", borderLeft: "1px solid rgba(123,92,240,0.4)", paddingLeft: "10px", lineHeight: "1.4" }}>Dijital<br /><span style={{ color: "#A78BFA", fontSize: "10px", letterSpacing: "1px" }}>REKLAM AJANSI</span></span>
+          </div>
+          <p className="text-xs text-[#9B9BB4] text-center sm:text-left">
+            Adana mobilya ve çeyiz firmalarına özel Meta reklam yönetimi.
           </p>
         </div>
 

@@ -20,28 +20,33 @@ function useCountUp(target: number, duration: number, started: boolean) {
   return count;
 }
 
-function StatItem({ stat }: { stat: (typeof STATS)[0] }) {
+function StatItem({ stat, delay }: { stat: (typeof STATS)[0]; delay: number }) {
   const itemRef = useRef<HTMLDivElement>(null);
   const [started, setStarted] = useState(false);
-  const count = useCountUp(stat.value, 2000, started);
+  const count = useCountUp(stat.value, 1800, started);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setStarted(true); },
-      { threshold: 0.5 }
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => setStarted(true), delay);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
     );
     if (itemRef.current) observer.observe(itemRef.current);
     return () => observer.disconnect();
-  }, []);
+  }, [delay]);
 
   return (
     <div
       ref={itemRef}
-      className="fade-in glass"
+      className="glass fade-in"
       style={{ borderRadius: "20px", padding: "48px 24px", textAlign: "center", display: "flex", flexDirection: "column", gap: "12px" }}
     >
-      <div className="gradient-text" style={{ fontSize: "clamp(40px, 6vw, 60px)", fontWeight: 700, lineHeight: 1 }}>
-        {count}{stat.suffix}
+      <div className="gradient-text" style={{ fontSize: "clamp(40px, 6vw, 56px)", fontWeight: 700, lineHeight: 1 }}>
+        {started ? count : 0}{stat.suffix}
       </div>
       <div style={{ color: "#9B9BB4", fontSize: "14px" }}>{stat.label}</div>
     </div>
@@ -62,8 +67,8 @@ export default function Stats() {
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "20px" }}>
-          {STATS.map((stat) => (
-            <StatItem key={stat.label} stat={stat} />
+          {STATS.map((stat, index) => (
+            <StatItem key={stat.label} stat={stat} delay={index * 150} />
           ))}
         </div>
 

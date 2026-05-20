@@ -6,10 +6,10 @@ export const WHATSAPP_FULL_URL = `${WHATSAPP_URL}?text=${WHATSAPP_MESSAGE}`;
 export const INSTAGRAM_URL = "https://instagram.com/yeniev_dijital";
 
 export const STATS = [
-  { value: 340, suffix: "%", label: "Ortalama Lead Artışı" },
-  { value: 120, suffix: "", label: "Organik Mesajdan" },
-  { value: 600, suffix: "", label: "Reklam Sonrası Mesaj" },
-  { value: 15, suffix: "", label: "Günde Ulaşılan Firma" },
+  { value: 85, suffix: "%", label: "Ortalama Lead Artışı" },
+  { value: 40, suffix: "+", label: "Yönetilen Kampanya" },
+  { value: 3, suffix: "x", label: "Ortalama Mesaj Artışı" },
+  { value: 48, suffix: "sa", label: "İlk Sonuç Süresi" },
 ];
 
 export const NICHES = [

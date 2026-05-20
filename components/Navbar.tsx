@@ -26,10 +26,9 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-        <a href="#" className="flex flex-col leading-tight">
-          <span className="text-xl font-bold gradient-text">Yeniev</span>
-          <span className="text-[10px] text-[#9B9BB4]">Ev mobilyası & çeyiz</span>
-          <span className="text-[10px] font-semibold text-[#A78BFA] tracking-widest uppercase">Reklam</span>
+        <a href="#" className="flex items-center gap-2">
+          <span className="text-xl font-bold gradient-text">YeniEv</span>
+          <span style={{ fontSize: "11px", color: "#9B9BB4", borderLeft: "1px solid rgba(123,92,240,0.4)", paddingLeft: "10px", lineHeight: "1.4" }}>Dijital<br /><span style={{ color: "#A78BFA", fontSize: "10px", letterSpacing: "1px" }}>REKLAM AJANSI</span></span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">

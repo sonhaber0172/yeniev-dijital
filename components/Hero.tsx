@@ -27,7 +27,7 @@ export default function Hero() {
 
           <div className="fade-in" style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "6px 14px", borderRadius: "50px", fontSize: "12px", fontWeight: 500, color: "#A78BFA", background: "rgba(123,92,240,0.15)", border: "1px solid rgba(123,92,240,0.3)", marginBottom: "28px", width: "fit-content" }}>
             <span style={{ width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#A78BFA", animation: "pulse 2s infinite" }} />
-            Adana'nın Tek Mobilya & Çeyiz Reklam Ajansı
+            Adana Mobilya & Çeyiz Nişi Uzmanı
           </div>
 
           <h1 className="fade-in" style={{ fontSize: "clamp(32px, 4.5vw, 52px)", fontWeight: 700, lineHeight: 1.2, color: "#F8F8FF", marginBottom: "24px" }}>
@@ -37,7 +37,7 @@ export default function Hero() {
           </h1>
 
           <p className="fade-in" style={{ color: "#9B9BB4", fontSize: "17px", lineHeight: "1.7", marginBottom: "40px" }}>
-            Adana'nın tek mobilya ve çeyiz nişi Meta reklam ajansı. Organik içerikten ayda 120 mesaj alan firma reklamla 600'e çıkıyor.
+            Adana'daki mobilya ve çeyiz firmalarına özel Meta reklam yönetimi. Doğru kitleye, doğru zamanda, ölçülebilir sonuçlarla.
           </p>
 
           <div className="fade-in" style={{ display: "flex", gap: "16px", flexWrap: "wrap", marginBottom: "48px" }}>
@@ -65,8 +65,8 @@ export default function Hero() {
 
           <div className="fade-in" style={{ display: "flex", gap: "40px" }}>
             {[
-              { value: "50+", label: "Kampanya" },
-              { value: "%340", label: "Ortalama Lead Artışı" },
+              { value: "40+", label: "Kampanya" },
+              { value: "%85", label: "Ortalama Lead Artışı" },
               { value: "Adana", label: "Merkezli" },
             ].map((stat) => (
               <div key={stat.label}>
@@ -83,13 +83,13 @@ export default function Hero() {
             <div className="glass" style={{ position: "absolute", inset: "16px", borderRadius: "18px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "20px", padding: "32px" }}>
               <div style={{ fontSize: "52px" }}>📱</div>
               <div style={{ textAlign: "center" }}>
-                <div className="gradient-text" style={{ fontSize: "28px", fontWeight: 700 }}>+480</div>
-                <div style={{ color: "#9B9BB4", fontSize: "13px", marginTop: "4px" }}>Aylık Ek Müşteri Mesajı</div>
+                <div className="gradient-text" style={{ fontSize: "28px", fontWeight: 700 }}>3x</div>
+                <div style={{ color: "#9B9BB4", fontSize: "13px", marginTop: "4px" }}>Daha Fazla Müşteri Mesajı</div>
               </div>
               <div style={{ width: "100%", height: "1px", background: "linear-gradient(90deg, transparent, #7B5CF0, transparent)" }} />
               <div style={{ display: "flex", gap: "32px", textAlign: "center" }}>
                 <div>
-                  <div style={{ fontSize: "20px", fontWeight: 700, color: "#F5C842" }}>%340</div>
+                  <div style={{ fontSize: "20px", fontWeight: 700, color: "#F5C842" }}>%85</div>
                   <div style={{ color: "#9B9BB4", fontSize: "11px" }}>Lead Artışı</div>
                 </div>
                 <div>
