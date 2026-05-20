@@ -5,9 +5,10 @@ export default function Footer() {
     <footer className="py-10 px-4 sm:px-6 bg-[#0A0A0F] border-t border-[#7B5CF0]/20">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center sm:items-start gap-2">
-          <div className="flex items-center gap-2">
-            <span className="text-xl font-bold gradient-text">YeniEv</span>
-            <span style={{ fontSize: "11px", color: "#9B9BB4", borderLeft: "1px solid rgba(123,92,240,0.4)", paddingLeft: "10px", lineHeight: "1.4" }}>Dijital<br /><span style={{ color: "#A78BFA", fontSize: "10px", letterSpacing: "1px" }}>REKLAM AJANSI</span></span>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1.2, gap: "2px" }}>
+            <span style={{ fontSize: "22px", fontWeight: 400, color: "#F8F8FF", letterSpacing: "-0.5px", fontFamily: "Georgia, serif" }}>Yeniev</span>
+            <span style={{ fontSize: "9px", color: "#F8F8FF", letterSpacing: "0.5px" }}>Ev mobilyası &amp; çeyiz</span>
+            <span style={{ fontSize: "9px", color: "#A78BFA", letterSpacing: "3px", fontWeight: 600 }}>REKLAM</span>
           </div>
           <p className="text-xs text-[#9B9BB4] text-center sm:text-left">
             Adana mobilya ve çeyiz firmalarına özel Meta reklam yönetimi.

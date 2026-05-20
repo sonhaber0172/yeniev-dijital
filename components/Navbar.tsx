@@ -26,9 +26,10 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
-          <span className="text-xl font-bold gradient-text">YeniEv</span>
-          <span style={{ fontSize: "11px", color: "#9B9BB4", borderLeft: "1px solid rgba(123,92,240,0.4)", paddingLeft: "10px", lineHeight: "1.4" }}>Dijital<br /><span style={{ color: "#A78BFA", fontSize: "10px", letterSpacing: "1px" }}>REKLAM AJANSI</span></span>
+        <a href="#" style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "center", lineHeight: 1.2, gap: "2px" }}>
+          <span style={{ fontSize: "22px", fontWeight: 400, color: "#F8F8FF", letterSpacing: "-0.5px", fontFamily: "Georgia, serif" }}>Yeniev</span>
+          <span style={{ fontSize: "9px", color: "#F8F8FF", letterSpacing: "0.5px" }}>Ev mobilyası &amp; çeyiz</span>
+          <span style={{ fontSize: "9px", color: "#A78BFA", letterSpacing: "3px", fontWeight: 600 }}>REKLAM</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
